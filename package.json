@@ -1,37 +1,19 @@
 {
-  "name": "simpletheme",
+  "name": "tailwind-started",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dist": "webpack --mode development",
-    "dev": "webpack --watch --mode development"
+    "build": "postcss ./src/css/main.css --output ./dist/css/main.css",
+    "dev": "postcss ./src/css/main.css --output ./dist/css/main.css --watch"
   },
-  "keywords": [
-    "theme",
-    "wordpress"
-  ],
-  "author": "Axiel Roque",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.2.2",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.2.0",
-    "node-sass": "^6.0.1",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
-    "sass-loader": "^12.1.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^5.50.0",
-    "webpack-cli": "^4.8.0"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.15"
   }
 }

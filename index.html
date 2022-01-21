@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-<link href="./build/css/main.min.css" rel="stylesheet"></head>
+    <title>Tailwind css</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+
 <body>
 
-    <h1>Main Page</h1>
-    <a href="./templates/home.html">Home</a>
-    <br>
-    <a href="./templates/thank-you.html">Thank You page</a>
-    
-<script defer src="./build/js/app.min.js"></script></body>
+    <header
+        class="py-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0 flex items-center justify-between mb-5">
+
+        <h1 class="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto font-bold text-lg"><a href="#!"
+                class="hover:text-sky-500">Web site</a></h1>
+
+        <nav class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
+            <ul class="flex space-x-8 list-none">
+                <li><a href="#!" class="hover:text-sky-500 dark:hover:text-sky-400 font-medium">Home</a></li>
+                <li><a href="#!" class="hover:text-sky-500 dark:hover:text-sky-400 font-medium">About Us</a>
+                </li>
+                <li><a href="#!" class="hover:text-sky-500 dark:hover:text-sky-400 font-medium">Servises</a>
+                </li>
+                <li><a href="#!" class="hover:text-sky-500 dark:hover:text-sky-400 font-medium">Contact
+                        Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div
+        class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+        <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/img/erin-lindford.jpg"
+            alt="Woman's Face">
+        <div class="text-center space-y-2 sm:text-left">
+            <div class="space-y-0.5">
+                <p class="text-lg text-black font-semibold">
+                    Erin Lindford
+                </p>
+                <p class="text-slate-500 font-medium">
+                    Product Engineer
+                </p>
+            </div>
+            <button
+                class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
+        </div>
+    </div>
+
+
+</body>
+
 </html>
